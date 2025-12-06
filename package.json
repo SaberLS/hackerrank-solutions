@@ -13,6 +13,15 @@
     "lint:fix": "eslint --fix \"**/*.{ts,tsx,mts,cts,cjs,mjs,js,jsx,md}\"",
     "prepare": "husky"
   },
+  "lint-staged": {
+    "*.{ts,mts,cts,tsx,js,mjs,cjs,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,scss,md}": [
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "ts-node": "^10.9.2"
   },
@@ -24,6 +33,7 @@
     "eslint": "^9.25.0",
     "eslint-plugin-unicorn": "^59.0.1",
     "globals": "^16.0.0",
+    "husky": "^9.1.7",
     "jiti": "^2.4.2",
     "prettier": "^3.7.4",
     "prettier-plugin-organize-imports": "^4.1.0",
