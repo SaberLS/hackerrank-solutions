@@ -3,6 +3,15 @@
  * @type {import("prettier").Config}
  */
 const config = {
+  plugins: [
+    'prettier-plugin-organize-imports',
+    'prettier-plugin-sort-json',
+    'prettier-plugin-packagejson',
+  ],
+
+  jsonRecursiveSort: false,
+  jsonSortOrder: '{"*": "lexical"}',
+
   trailingComma: 'es5',
   useTabs: false,
   tabWidth: 2,
