@@ -1,0 +1,83 @@
+{
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.onIgnoredFiles": "warn",
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    " html",
+    "vue"
+  ],
+  "eslint.useFlatConfig": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    " html",
+    "vue"
+  ],
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "client/package-lock.json": true
+  },
+  "files.insertFinalNewline": true,
+  "files.refactoring.autoSave": true,
+  "files.trimTrailingWhitespace": true,
+  "hide-files.files": [],
+  "jest.outputConfig": {
+    "revealOn": "run",
+    "revealWithFocus": "none",
+    "clearOnRun": "none"
+  },
+  "jest.virtualFolders": [
+    {
+      "name": "server-tests",
+      "jestCommandLine": "pnpm --filter server test --",
+      "runMode": "watch"
+    }
+  ],
+
+  "prettier.arrowParens": "avoid",
+  "prettier.bracketSpacing": true,
+  "prettier.embeddedLanguageFormatting": "auto",
+  "prettier.endOfLine": "lf",
+  "prettier.experimentalTernaries": true,
+  "prettier.printWidth": 80,
+  "prettier.proseWrap": "always",
+
+  "prettier.semi": false,
+  "prettier.singleAttributePerLine": true,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "es5",
+  "prettier.useTabs": false,
+
+  "testing.automaticallyOpenTestResults": "neverOpen",
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "@todo",
+    "XXX",
+    "[ ]",
+    "[x]",
+    "?TODO"
+  ],
+
+  "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|\\*)\\s*($TAGS)|^\\s*- \\[ \\])"
+}

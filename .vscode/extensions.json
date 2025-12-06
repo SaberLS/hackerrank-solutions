@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "gruntfuggly.todo-tree",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "antfu.file-nesting",
+    "ms-vscode.vscode-typescript-next"
+  ]
+}
