@@ -1,9 +1,9 @@
 import eslint from '@eslint/js'
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
+import { defineConfig } from 'eslint/config'
 import globals from 'globals'
 import type { Config, ConfigArray } from 'typescript-eslint'
 import tseslint from 'typescript-eslint'
-import { defineConfig } from 'eslint/config'
 
 const createConfig = (__dirname: string): Config => {
   console.info({ __dirname })
@@ -62,6 +62,17 @@ const createConfig = (__dirname: string): Config => {
       files: ['**/*.{js,mjs,mts,cts,cjs,ts,}'],
       rules: {
         'unicorn/filename-case': 'off',
+      },
+    },
+    {
+      files: ['**/*solutions/**/*.{js,mjs,mts,cts,cjs,ts,}'],
+      rules: {
+        'unicorn/filename-case': [
+          'error',
+          {
+            case: 'kebabCase',
+          },
+        ],
       },
     },
     {
